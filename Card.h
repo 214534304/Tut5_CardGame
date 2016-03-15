@@ -19,6 +19,7 @@ public:
 	int getNumber();              
 	void print();
 	Card(int,string);
+	Card();
 	~Card();
 };
 
