@@ -12,14 +12,23 @@ void DeckofCards::reset(){
 		C[i + 10] = new Card(i + 10, "Black");
 	}
 }
+  
+//Picking two random cards from the deck and swap this 50 times to shuffle the cards
 
 void DeckofCards::shuffle(){
-	int num1, num2;
+	int num1, num2,temp;
 	for (int i = 0; i < 50; i++){
+		if (num1 = num2)
+			break;
+		else{
+			temp = num1;
+			num1 = num2;
+			num2 = temp;
+		}
 
-
-	}
 }
+}
+
 
 DeckofCards::DeckofCards()
 {
