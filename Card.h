@@ -1,17 +1,24 @@
 #pragma once
 #include <iostream>
-#include <string>
+#include <string>      
 
 using namespace std;
 
 class Card
 {
 
+private:
+	string code;                //colour variable
+	int num;                    // number variable
 public:
-	string colour();
-	int number();
+	//function prototype
+
+	void setColour(string);
+	string getColour();
+	void  setNumber(int);
+	int getNumber();              
 	void print();
-	Card();
+	Card(int,string);
 	~Card();
 };
 
